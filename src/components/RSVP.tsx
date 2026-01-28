@@ -8,7 +8,7 @@ interface FormData {
   dietaryRestrictions: string;
 }
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwUAhhmCkoyGmBYm23AndEk65fg7mzFEpxgPoGHZfWBZNMBub-hqPAyFGzmSls-W_Qf/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx5VYClxLP7f1YtQ4adsFVfUKW6vsf_vvPTR4SpxDvZaOtWCYgzfLadPmXbYOUzZszf/exec';
 
 const RSVP = () => {
   const [formData, setFormData] = useState<FormData>({
