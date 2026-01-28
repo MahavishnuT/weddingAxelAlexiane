@@ -3,36 +3,43 @@ import './Accommodation.css';
 const Accommodation = () => {
   const accommodations = [
     {
-      name: 'Hôtel Le Château',
-      type: 'Hôtel ★★★★',
-      distance: '2 km',
-      price: 'À partir de 120€/nuit',
-      phone: '01 23 45 67 89',
-      website: 'www.hotellechateau.fr',
+      name: 'Hôtel The Originals, Saint-Aunès',
+      distance: '12 km',
+      phone: '04 67 10 01 35',
+      email: 'contact@hotel-ecoparc.com',
+      website: 'www.theoriginalshotels.com/hotels/montpellier-est-ecoparc',
     },
     {
-      name: "Chambres d'hôtes Les Roses",
-      type: "Chambres d'hôtes",
-      distance: '3 km',
-      price: 'À partir de 80€/nuit',
-      phone: '01 23 45 67 90',
-      website: 'www.lesroses.fr',
-    },
-    {
-      name: 'Gîte de la Vallée',
-      type: 'Gîte',
-      distance: '5 km',
-      price: 'À partir de 100€/nuit',
-      phone: '01 23 45 67 91',
-      website: 'www.gitevallee.fr',
-    },
-    {
-      name: 'Hôtel du Parc',
-      type: 'Hôtel ★★★',
+      name: "Mas l'Escale du Coteau, Montaud",
       distance: '4 km',
-      price: 'À partir de 90€/nuit',
-      phone: '01 23 45 67 92',
-      website: 'www.hotelduparc.fr',
+      email: 'lescaleducoteau@orange.fr',
+      phone: '06 80 22 56 67',
+    },
+    {
+      name: 'Hôtel Disini, Castries',
+      distance: '7 km',
+      phone: '04 67 41 97 86',
+      email: 'contact@disini-hotel.com',
+      website: 'www.disini-hotel.com/',
+    },
+    {
+      name: 'Clos Bellilocien, Beaulieu',
+      distance: '7 km',
+      phone: '06 24 50 86 61',
+      email: 'closbellilocien@gmail.com',
+      website: 'www.closbellilocien.com/',
+    },
+    {
+      name: 'Horizon Resort Massane, Baillargues',
+      distance: '14 km',
+      phone: '04 67 87 87 87',
+      email: 'reception@horizon-resort.com',
+      website: 'www.horizon-resort.com/fr/',
+    },
+    {
+      name: 'B&B Hôtel Montpelier Vendargues, Saint-Aunès',
+      distance: '12 km',
+      website: 'www.hotel-bb.com/fr/hotel/montpellier-vendargues',
     },
   ];
 
@@ -49,33 +56,39 @@ const Accommodation = () => {
             <div key={index} className="accommodation-card">
               <div className="accommodation-header">
                 <h3>{place.name}</h3>
-                <span className="accommodation-type">{place.type}</span>
               </div>
               <div className="accommodation-details">
                 <div className="detail-item">
                   <span className="detail-icon">📍</span>
-                  <span>{place.distance} du lieu</span>
+                  <span>{place.distance} du château</span>
                 </div>
-                <div className="detail-item">
-                  <span className="detail-icon">💰</span>
-                  <span>{place.price}</span>
-                </div>
-                <div className="detail-item">
-                  <span className="detail-icon">📞</span>
-                  <a href={`tel:${place.phone.replace(/\s/g, '')}`}>
-                    {place.phone}
-                  </a>
-                </div>
-                <div className="detail-item">
-                  <span className="detail-icon">🌐</span>
-                  <a
-                    href={`https://${place.website}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {place.website}
-                  </a>
-                </div>
+                {place.phone && (
+                  <div className="detail-item">
+                    <span className="detail-icon">📞</span>
+                    <a href={`tel:${place.phone.replace(/\s/g, '')}`}>
+                      {place.phone}
+                    </a>
+                  </div>
+                )}
+                {place.email && (
+                  <div className="detail-item">
+                    <span className="detail-icon">📧</span>
+                    <a href={`mailto:${place.email}`}>{place.email}</a>
+                  </div>
+                )}
+                {place.website && (
+                  <div className="detail-item">
+                    <span className="detail-icon">🌐</span>
+
+                    <a
+                      href={`https://${place.website}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {place.website}
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

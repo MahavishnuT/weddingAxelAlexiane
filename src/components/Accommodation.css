@@ -60,6 +60,7 @@
   font-weight: 400;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+  min-height: 5rem;
 }
 
 .accommodation-type {
