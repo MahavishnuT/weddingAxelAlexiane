@@ -65,7 +65,7 @@ const RSVP = () => {
       <div className="rsvp-container">
         <h2>Confirmez votre présence</h2>
         <p className="rsvp-subtitle">
-          Nous serions ravis de vous compter parmi nous
+          Nous serions ravis de vous compter parmi nous (réponse souhaitée avant le 1er avril)
         </p>
 
         <form onSubmit={handleSubmit} className="rsvp-form">

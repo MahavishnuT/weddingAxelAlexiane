@@ -9,7 +9,7 @@ const Hero = () => {
           <span className="ampersand">&</span>
           <span className="name">Axel</span>
         </h1>
-        <div className="hero-date">2026</div>
+        <div className="hero-date">27 / 06 / 2026</div>
         <div className="scroll-indicator">
           <div className="scroll-arrow"></div>
         </div>
