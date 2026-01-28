@@ -1,32 +1,27 @@
 import './Schedule.css';
 
+const EVENTS = [
+  {
+    time: '16h00',
+    title: 'Cérémonie',
+    lieu: 'Eglise Saint Etienne de Castries',
+    icon: '💍',
+  },
+  {
+    time: '18h00',
+    title: "Vin d'honneur et soirée",
+    lieu: "Château Puech Haut, Saint Drézéry",
+    icon: '🥂',
+  },
+  {
+    time: 'Lendemain - 11h00',
+    title: 'Brunch',
+    lieu: 'Château Puech Haut, Saint Drézéry',
+    icon: '🍽️',
+  },
+];
+
 const Schedule = () => {
-  const events = [
-    {
-      time: '15h00',
-      title: 'Cérémonie',
-      description: 'Échange des vœux en extérieur',
-      icon: '💍',
-    },
-    {
-      time: '16h30',
-      title: 'Pot de bienvenue',
-      description: "Vin d'honneur et cocktail",
-      icon: '🥂',
-    },
-    {
-      time: '19h30',
-      title: 'Dîner',
-      description: 'Repas et soirée dansante',
-      icon: '🍽️',
-    },
-    {
-      time: 'Lendemain - 11h00',
-      title: 'Brunch',
-      description: 'Petit-déjeuner convivial',
-      icon: '☕',
-    },
-  ];
 
   return (
     <section className="schedule" id="schedule">
@@ -37,15 +32,15 @@ const Schedule = () => {
         </p>
 
         <div className="timeline">
-          {events.map((event, index) => (
+          {EVENTS.map((event, index) => (
             <div key={index} className="timeline-item">
               <div className="timeline-icon">{event.icon}</div>
               <div className="timeline-content">
                 <div className="timeline-time">{event.time}</div>
                 <h3>{event.title}</h3>
-                <p>{event.description}</p>
+                <p>{event.lieu}</p>
               </div>
-              {index < events.length - 1 && (
+              {index < EVENTS.length - 1 && (
                 <div className="timeline-line"></div>
               )}
             </div>
