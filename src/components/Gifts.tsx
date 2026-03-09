@@ -30,6 +30,20 @@ const Gifts = () => {
             <span className="arrow">→</span>
           </a>
         </div>
+
+        <div className="gifts-list">
+          <h3>Idées de cadeaux</h3>
+          <ul>
+            <li>Voyage de noces au Japon</li>
+            <li>Cocotte Le Creuset noire</li>
+            <li>Vitaliseur Marion</li>
+            <li>Album photo de mariage</li>
+            <li>Un olivier</li>
+            <li>Couteaux de cuisine</li>
+            <li>Une plancha</li>
+            <li>...</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

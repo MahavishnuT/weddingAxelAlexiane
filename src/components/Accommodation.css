@@ -104,6 +104,12 @@
   text-decoration: underline;
 }
 
+.accomodation-details_website {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .accommodation-note {
   background: var(--white);
   padding: 2rem;

@@ -41,6 +41,29 @@ const Accommodation = () => {
       distance: '12 km',
       website: 'www.hotel-bb.com/fr/hotel/montpellier-vendargues',
     },
+    {
+      name: "l'Oasis, Vendargues",
+      distance: '11 km',
+      website: 'www.booking.com/hotel/fr/l-39-oasis-vendargues.fr.html?chal_t=1773053737391&force_referer=https%3A%2F%2Fwww.google.com%2F'
+    },
+    {
+      name: "La chambre de Léopoldine, Verargues",
+      distance: '14 km',
+      website: 'www.booking.com/hotel/fr/la-chambre-de-leopoldine.fr.html#availability'
+    },
+    {
+      name: "Camping Le Fondespierre",
+      distance: '10 km',
+      phone: '04 67 91 20 03',
+      email: 'campingfondespierre@outlook.fr',
+      website: 'camping-fondespierre.com/'
+    },
+    {
+      name: "Camping Plein Air des Chênes, Clapiers",
+      distance: '11 km',
+      phone: '04 11 32 90 00',
+      website: 'www.sandaya.fr/nos-campings/plein-air-des-chenes'
+    }
   ];
 
   return (
@@ -84,6 +107,7 @@ const Accommodation = () => {
                       href={`https://${place.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className='accomodation-details_website'
                     >
                       {place.website}
                     </a>

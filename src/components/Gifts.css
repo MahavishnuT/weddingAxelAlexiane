@@ -33,6 +33,7 @@
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  margin-bottom: 3rem;
 }
 
 .gift-card:hover {
@@ -104,6 +105,19 @@
 
 .gift-link:hover .arrow {
   transform: translateX(5px);
+}
+
+.gifts-list h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.gifts-list ul {
+  list-style: none;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
