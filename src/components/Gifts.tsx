@@ -41,6 +41,7 @@ const Gifts = () => {
             <li>Un olivier</li>
             <li>Couteaux de cuisine</li>
             <li>Une plancha</li>
+            <li>Votre livre préféré</li>
             <li>...</li>
           </ul>
         </div>
