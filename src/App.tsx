@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import RSVP from './components/RSVP';
 import Gifts from './components/Gifts';
+import Explore from './components/Explore';
 import Schedule from './components/Schedule';
 import Accommodation from './components/Accommodation';
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Schedule />
       <Gifts />
+      <Explore />
       <RSVP />
       <Accommodation />
     </div>

@@ -85,6 +85,7 @@
   gap: 0.8rem;
   font-size: 0.95rem;
   color: var(--text-color);
+  min-width: 0;
 }
 
 .detail-icon {
@@ -97,6 +98,11 @@
   color: var(--accent-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .detail-item a:hover {
@@ -146,5 +152,12 @@
 
   .accommodation-note {
     padding: 1.5rem;
+  }
+
+  .detail-item a {
+    max-width: calc(100vw - 8rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
